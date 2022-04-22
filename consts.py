@@ -5,7 +5,7 @@ from telegram.utils.helpers import escape_markdown as es
 def welcome_msg():
     welcome_msg = '''<b>Welcome To the Bot</b>🖐🖐
  <i>Send me anyones instagram username or profile url to get their DP</i>
- ex : <b>virat.kohli</b> , <b>thenameisyash</b> etc'''
+ ex : <b>viramind________freezer</b> , <b>anan_dhx</b> etc'''
 
     return welcome_msg
 
@@ -19,7 +19,7 @@ def acc_type(val):
 
 def create_caption(user):
     caption_msg = f'''📛*Name*📛: {es(user.full_name,version=2)} \n😁*Followers*😁: {es(str(user.followers),version=2)} \n🤩*Following*🤩: {es(str(user.followees),version=2)}\
-        \n🧐*Account Type*🧐: {acc_type(user.is_private)} \n\nThank You For Using The bot 😀😀'''
+        \n🧐*Account Type*🧐: {acc_type(user.is_private)} \n\nThank You For Using The bot 😀😀-AnaNdhU'''
 
     return caption_msg
 
@@ -39,4 +39,4 @@ def get_username(url):
 
 
 ratingkey = [[InlineKeyboardButton(
-    "Rate me ❤️", url="https://t.me/BotsArchive/1657")]]
+    "Rate me ❤️", url="https://www.buymeacoffee.com/anandhx")]]
