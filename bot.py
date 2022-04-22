@@ -8,6 +8,7 @@ import time
 from consts import *
 import re
 
+'''Coded by 😃😃😃😃'''
 
 
 L = Instaloader()
@@ -37,7 +38,7 @@ def help_msg(update, context):
 
 def contact(update, context):
     keyboard = [[InlineKeyboardButton(
-        "Contact", url="telegram.me/ana_ndhu_ashok")], ]
+        "Contact", url=f"telegram.me/{TELEGRAM_USERNAME}")], ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -50,7 +51,7 @@ def username(update, context):
     query = update.message.text
 
     if not re.compile(mediaregpat).search(query):
-        msg = update.message.reply_text("Downloading...🤪")
+        msg = update.message.reply_text("Downloading...")
         if re.compile(proregpat).search(query):
             query = get_username(query)
         chat_id = update.message.chat_id
@@ -72,7 +73,7 @@ def username(update, context):
 
 
 def source(update, context):
-    update.message.reply_text("You can get the source code of this bot here \n\n https://github.com/anandhx/telegram-bot")
+    update.message.reply_text("You can get the source code of this bot here \n\n https://github.com/anishgowda21/Instagram_DP_Saver_Bot")
 
 
 def error(update, context):
