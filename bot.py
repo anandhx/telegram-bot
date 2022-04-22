@@ -38,7 +38,7 @@ def help_msg(update, context):
 
 def contact(update, context):
     keyboard = [[InlineKeyboardButton(
-        "Contact", url=f"telegram.me/{TELEGRAM_USERNAME}")], ]
+        "Contact", url=f"telegram.me/ana_ndhu_ashok")], ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
